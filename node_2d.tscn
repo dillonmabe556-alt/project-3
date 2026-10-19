@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://dksdool47uplx" path="res://move_to_next_level.gd" id="5_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://hubgrjg08jv4" path="res://Forest Tileset/Tiles/TilesNonSliced.png" id="6_kdubu"]
 [ext_resource type="Script" uid="uid://bcigsb6a23f7l" path="res://reset_box.gd" id="8_rj586"]
+[ext_resource type="Texture2D" uid="uid://dlcc7m5fnc5rr" path="res://16-bit-spike-Sheet.png" id="9_4d7sh"]
+[ext_resource type="Script" uid="uid://dnc3bkfqpgw2y" path="res://spike.gd" id="9_ir8iy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lslib"]
 size = Vector2(65, 69)
@@ -162,6 +164,9 @@ sources/0 = SubResource("TileSetAtlasSource_d21ai")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ed15"]
 size = Vector2(10752, 122.51929)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e8app"]
+size = Vector2(65, 68)
 
 [node name="Node2D" type="Node2D" unique_id=617119043]
 
@@ -377,8 +382,25 @@ light_mask = 2
 position = Vector2(1750.3496, 51.259644)
 shape = SubResource("RectangleShape2D_0ed15")
 
+[node name="spike" type="Area2D" parent="." unique_id=1873476364]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="spike" type="Sprite2D" parent="spike" unique_id=2254935]
+position = Vector2(2964.0002, -99)
+scale = Vector2(5.151123, 5.3505616)
+texture = ExtResource("9_4d7sh")
+region_enabled = true
+region_rect = Rect2(0, 0, 15.247555, 15.975662)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike" unique_id=583557785]
+position = Vector2(2968.5, -92)
+shape = SubResource("RectangleShape2D_e8app")
+
 [connection signal="body_entered" from="trigger_zone" to="trigger_zone" method="_on_body_entered"]
 [connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
 [connection signal="body_entered" from="key2" to="key2" method="_on_body_entered"]
 [connection signal="body_entered" from="move to next level" to="move to next level" method="_on_body_entered"]
 [connection signal="body_entered" from="reset box" to="reset box" method="_on_body_entered"]
+[connection signal="body_entered" from="spike" to="spike" method="_on_body_entered"]
