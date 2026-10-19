@@ -60,7 +60,10 @@ size = Vector2(492.99976, 312)
 size = Vector2(48.75, 51)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
-size = Vector2(161, 1018)
+size = Vector2(161, 414)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vxoj"]
+size = Vector2(161, 551)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbkgv"]
 size = Vector2(44, 53)
@@ -167,6 +170,30 @@ size = Vector2(10752, 122.51929)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e8app"]
 size = Vector2(65, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k73cj"]
+size = Vector2(65, 50.50302)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rjqkl"]
+load_path = "res://.godot/imported/16-bit-spike-Sheet.png-24a69960861a7b980bccc2c0d5c52167.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjqkl"]
+size = Vector2(65, 50.50302)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fs4d3"]
+load_path = "res://.godot/imported/16-bit-spike-Sheet.png-24a69960861a7b980bccc2c0d5c52167.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fs4d3"]
+size = Vector2(65, 50.50302)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7vxoj"]
+load_path = "res://.godot/imported/16-bit-spike-Sheet.png-24a69960861a7b980bccc2c0d5c52167.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei405"]
+size = Vector2(65, 50.50302)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e8dv2"]
+load_path = "res://.godot/imported/16-bit-spike-Sheet.png-24a69960861a7b980bccc2c0d5c52167.ctex"
 
 [node name="Node2D" type="Node2D" unique_id=617119043]
 
@@ -317,16 +344,22 @@ position = Vector2(-37, -14)
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall" unique_id=252609685]
-position = Vector2(-257.5, -346)
+position = Vector2(-257.5, -44)
 shape = SubResource("RectangleShape2D_epypp")
 
-[node name="trigger_zone" type="Area2D" parent="." unique_id=1463467584]
+[node name="skip pervention" type="Area2D" parent="." unique_id=1183336271]
+position = Vector2(-285, -548.5)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="skip pervention" unique_id=1214410119]
+shape = SubResource("RectangleShape2D_7vxoj")
+
+[node name="door lock" type="Area2D" parent="." unique_id=1463467584]
 position = Vector2(14, 0)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("3_epypp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="trigger_zone" unique_id=2007239626]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door lock" unique_id=2007239626]
 position = Vector2(-136, 24)
 shape = SubResource("RectangleShape2D_gbkgv")
 
@@ -368,7 +401,7 @@ position = Vector2(1707, 73)
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1895121539]
 visibility_layer = 2
 scale = Vector2(4, 4)
-tile_map_data = PackedByteArray("AAABAAEAAAABAAAAAAACAAEAAAABAAAAAAADAAEAAAABAAAAAAAEAAEAAAABAAAAAAD//wEAAAABAAAAAAD+/wEAAAABAAAAAAD9/wEAAAABAAAAAAAAAAEAAAABAAAAAAD8/wEAAAABAAAAAAD7/wEAAAABAAAAAAD6/wEAAAAAAAAAAAAFAAEAAAACAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAABAAAAAAAJAAAAAAABAAAAAAAKAAAAAAABAAAAAAALAAAAAAABAAAAAAAMAAAAAAABAAAAAAANAAAAAAABAAEAAAAOAAAAAAACAAEAAAAOAP//AAACAAEAAAAOAAEAAAACAAIAAAAIAAEAAAABAAIAAAAJAAEAAAABAAIAAAAKAAEAAAABAAIAAAALAAEAAAABAAIAAAAMAAEAAAABAAIAAAANAAEAAAABAAIAAAAHAAEAAAAAAAIAAAANAP//AAAAAAEAAAANAP7/AAAAAAEAAAANAP3/AAAAAAEAAAAOAP7/AAACAAEAAAAOAP3/AAACAAEAAAANAPz/AAAAAAAAAAAOAPz/AAACAAAAAAAFAP3/AAACAAAAAAAEAP3/AAABAAAAAAADAP3/AAABAAAAAAACAP3/AAABAAAAAAABAP3/AAABAAAAAAAAAP3/AAABAAAAAAD///3/AAAAAAAAAAD///7/AAAAAAIAAAAAAP7/AAABAAIAAAABAP7/AAABAAIAAAACAP7/AAABAAIAAAADAP7/AAABAAIAAAAEAP7/AAABAAIAAAAFAP7/AAACAAIAAAAFAAIAAAACAAIAAAAEAAIAAAABAAIAAAADAAIAAAABAAIAAAACAAIAAAABAAIAAAABAAIAAAABAAIAAAAAAAIAAAABAAIAAAD//wIAAAABAAIAAAD+/wIAAAABAAIAAAD9/wIAAAABAAIAAAD8/wIAAAABAAIAAAD7/wIAAAABAAIAAAD6/wIAAAAAAAIAAAD1////AAAAAAAAAAD2////AAABAAAAAAD3////AAABAAAAAAD4////AAACAAAAAAD1/wAAAAAAAAIAAAD2/wAAAAABAAIAAAD3/wAAAAABAAIAAAD4/wAAAAACAAIAAADz/wEAAAACAAMAAADs/wEAAAACAAAAAADp/wEAAAABAAAAAADq/wEAAAABAAAAAADr/wEAAAABAAAAAADo/wIAAAABAAIAAADp/wIAAAABAAIAAADq/wIAAAABAAIAAADr/wIAAAABAAIAAADs/wIAAAACAAIAAAAYAAIAAAAAAAAAAAAZAAIAAAABAAAAAAAaAAIAAAABAAAAAAAbAAIAAAABAAAAAAAcAAIAAAABAAAAAAAdAAIAAAABAAAAAAAeAAIAAAABAAAAAAAfAAIAAAABAAAAAAAgAAIAAAACAAAAAAAgAAMAAAACAAEAAAAgAAQAAAACAAEAAAAYAAMAAAAAAAEAAAAYAAQAAAAAAAEAAAAYAAUAAAAAAAIAAAAgAAUAAAACAAIAAAAfAAUAAAABAAIAAAAeAAUAAAABAAIAAAAdAAUAAAABAAIAAAAcAAUAAAABAAIAAAAbAAUAAAABAAIAAAAaAAUAAAABAAIAAAAZAAUAAAABAAIAAAAZAAMAAAABAAEAAAAZAAQAAAABAAEAAAAaAAQAAAABAAEAAAAaAAMAAAABAAEAAAAbAAQAAAABAAEAAAAbAAMAAAABAAEAAAAcAAQAAAABAAEAAAAcAAMAAAABAAEAAAAdAAQAAAABAAEAAAAdAAMAAAABAAEAAAAeAAMAAAABAAEAAAAeAAQAAAABAAEAAAAfAAMAAAABAAEAAAAfAAQAAAABAAEAAADo/wEAAAABAAAAAADn/wEAAAABAAAAAADm/wEAAAAAAAAAAADm/wIAAAAAAAIAAADn/wIAAAABAAIAAAAlAAIAAAAAAAAAAAAmAAIAAAABAAAAAAAnAAIAAAABAAAAAAAoAAIAAAABAAAAAAApAAIAAAACAAAAAAAlAAMAAAAAAAIAAAAmAAMAAAABAAIAAAAnAAMAAAABAAIAAAAoAAMAAAABAAIAAAApAAMAAAACAAIAAAAuAAAAAAACAAIAAAAtAAAAAAABAAIAAAAsAAAAAAAAAAIAAAAsAP//AAAAAAAAAAAuAP//AAACAAAAAAAtAP//AAABAAAAAAAwAPz/AAAAAAAAAAAxAPz/AAABAAAAAAAyAPz/AAACAAAAAAAwAP3/AAAAAAIAAAAxAP3/AAABAAIAAAAyAP3/AAACAAIAAAA0APn/AAAAAAAAAAA1APn/AAABAAAAAAA2APn/AAACAAAAAAA0APr/AAAAAAIAAAA1APr/AAABAAIAAAA2APr/AAACAAIAAAA5APn/AAAAAAAAAAA6APn/AAABAAAAAAA7APn/AAABAAAAAAA8APn/AAABAAAAAAA9APn/AAABAAAAAAA+APn/AAABAAAAAAA/APn/AAABAAAAAABAAPn/AAACAAAAAAA5APr/AAAAAAIAAAA6APr/AAABAAIAAAA7APr/AAABAAIAAAA8APr/AAABAAIAAAA9APr/AAABAAIAAAA+APr/AAABAAIAAAA/APr/AAABAAIAAABAAPr/AAACAAIAAABCAPz/AAAAAAAAAABGAPz/AAACAAAAAABCAP3/AAAAAAIAAABDAP3/AAABAAIAAABEAP3/AAABAAIAAABFAP3/AAABAAIAAABGAP3/AAACAAIAAABDAPz/AAABAAAAAABEAPz/AAABAAAAAABFAPz/AAABAAAAAABJAPn/AAAAAAAAAABKAPn/AAABAAAAAABLAPn/AAABAAAAAABMAPn/AAABAAAAAABNAPn/AAABAAAAAABOAPn/AAABAAAAAABPAPn/AAABAAAAAABQAPn/AAACAAAAAABJAPr/AAAAAAEAAABJAPv/AAAAAAEAAABJAPz/AAAAAAEAAABJAP3/AAAAAAIAAABKAP3/AAABAAIAAABLAP3/AAABAAIAAABMAP3/AAABAAIAAABNAP3/AAABAAIAAABOAP3/AAABAAIAAABPAP3/AAABAAIAAABQAP3/AAACAAIAAABQAPz/AAACAAEAAABQAPv/AAACAAEAAABQAPr/AAACAAEAAABKAPr/AAABAAEAAABKAPv/AAABAAEAAABLAPv/AAABAAEAAABLAPz/AAABAAEAAABKAPz/AAABAAEAAABLAPr/AAABAAEAAABMAPr/AAABAAEAAABMAPv/AAABAAEAAABNAPv/AAABAAEAAABNAPz/AAABAAEAAABMAPz/AAABAAEAAABOAPz/AAABAAEAAABPAPz/AAABAAEAAABPAPv/AAABAAEAAABPAPr/AAABAAEAAABOAPr/AAABAAEAAABNAPr/AAABAAEAAABOAPv/AAABAAEAAAA=")
+tile_map_data = PackedByteArray("AAABAAEAAAABAAAAAAACAAEAAAABAAAAAAADAAEAAAABAAAAAAAEAAEAAAABAAAAAAD//wEAAAABAAAAAAD+/wEAAAABAAAAAAD9/wEAAAABAAAAAAAAAAEAAAABAAAAAAD8/wEAAAABAAAAAAD7/wEAAAABAAAAAAD6/wEAAAAAAAAAAAAFAAEAAAACAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAABAAAAAAAJAAAAAAABAAAAAAAKAAAAAAABAAAAAAALAAAAAAABAAAAAAAMAAAAAAABAAAAAAANAAAAAAABAAEAAAAOAAAAAAACAAEAAAAOAP//AAACAAEAAAAOAAEAAAACAAIAAAAIAAEAAAABAAIAAAAJAAEAAAABAAIAAAAKAAEAAAABAAIAAAALAAEAAAABAAIAAAAMAAEAAAABAAIAAAANAAEAAAABAAIAAAAHAAEAAAAAAAIAAAANAP//AAAAAAEAAAANAP7/AAAAAAEAAAANAP3/AAAAAAEAAAAOAP7/AAACAAEAAAAOAP3/AAACAAEAAAANAPz/AAAAAAAAAAAOAPz/AAACAAAAAAAFAP3/AAACAAAAAAAEAP3/AAABAAAAAAADAP3/AAABAAAAAAACAP3/AAABAAAAAAABAP3/AAABAAAAAAAAAP3/AAABAAAAAAD///3/AAAAAAAAAAD///7/AAAAAAIAAAAAAP7/AAABAAIAAAABAP7/AAABAAIAAAACAP7/AAABAAIAAAADAP7/AAABAAIAAAAEAP7/AAABAAIAAAAFAP7/AAACAAIAAAAFAAIAAAACAAIAAAAEAAIAAAABAAIAAAADAAIAAAABAAIAAAACAAIAAAABAAIAAAABAAIAAAABAAIAAAAAAAIAAAABAAIAAAD//wIAAAABAAIAAAD+/wIAAAABAAIAAAD9/wIAAAABAAIAAAD8/wIAAAABAAIAAAD7/wIAAAABAAIAAAD6/wIAAAAAAAIAAAD1////AAAAAAAAAAD2////AAABAAAAAAD3////AAABAAAAAAD4////AAACAAAAAAD1/wAAAAAAAAIAAAD2/wAAAAABAAIAAAD3/wAAAAABAAIAAAD4/wAAAAACAAIAAADz/wEAAAACAAMAAADs/wEAAAACAAAAAADp/wEAAAABAAAAAADq/wEAAAABAAAAAADr/wEAAAABAAAAAADo/wIAAAABAAIAAADp/wIAAAABAAIAAADq/wIAAAABAAIAAADr/wIAAAABAAIAAADs/wIAAAACAAIAAAAYAAIAAAAAAAAAAAAZAAIAAAABAAAAAAAaAAIAAAABAAAAAAAbAAIAAAABAAAAAAAcAAIAAAABAAAAAAAdAAIAAAABAAAAAAAeAAIAAAABAAAAAAAfAAIAAAABAAAAAAAgAAIAAAACAAAAAAAgAAMAAAACAAEAAAAgAAQAAAACAAEAAAAYAAMAAAAAAAEAAAAYAAQAAAAAAAEAAAAYAAUAAAAAAAIAAAAgAAUAAAACAAIAAAAfAAUAAAABAAIAAAAeAAUAAAABAAIAAAAdAAUAAAABAAIAAAAcAAUAAAABAAIAAAAbAAUAAAABAAIAAAAaAAUAAAABAAIAAAAZAAUAAAABAAIAAAAZAAMAAAABAAEAAAAZAAQAAAABAAEAAAAaAAQAAAABAAEAAAAaAAMAAAABAAEAAAAbAAQAAAABAAEAAAAbAAMAAAABAAEAAAAcAAQAAAABAAEAAAAcAAMAAAABAAEAAAAdAAQAAAABAAEAAAAdAAMAAAABAAEAAAAeAAMAAAABAAEAAAAeAAQAAAABAAEAAAAfAAMAAAABAAEAAAAfAAQAAAABAAEAAADo/wEAAAABAAAAAADn/wEAAAABAAAAAADm/wEAAAAAAAAAAADm/wIAAAAAAAIAAADn/wIAAAABAAIAAAAlAAIAAAAAAAAAAAAmAAIAAAABAAAAAAAnAAIAAAABAAAAAAAoAAIAAAABAAAAAAApAAIAAAACAAAAAAAlAAMAAAAAAAIAAAAmAAMAAAABAAIAAAAnAAMAAAABAAIAAAAoAAMAAAABAAIAAAApAAMAAAACAAIAAAAuAAAAAAACAAIAAAAtAAAAAAABAAIAAAAsAAAAAAAAAAIAAAAsAP//AAAAAAAAAAAuAP//AAACAAAAAAAtAP//AAABAAAAAAAwAPz/AAAAAAAAAAAxAPz/AAABAAAAAAAyAPz/AAACAAAAAAAwAP3/AAAAAAIAAAAxAP3/AAABAAIAAAAyAP3/AAACAAIAAAA0APn/AAAAAAAAAAA1APn/AAABAAAAAAA2APn/AAACAAAAAAA0APr/AAAAAAIAAAA1APr/AAABAAIAAAA2APr/AAACAAIAAAA5APn/AAAAAAAAAAA6APn/AAABAAAAAAA7APn/AAABAAAAAAA8APn/AAABAAAAAAA9APn/AAABAAAAAAA+APn/AAABAAAAAAA/APn/AAABAAAAAABAAPn/AAACAAAAAAA5APr/AAAAAAIAAAA6APr/AAABAAIAAAA7APr/AAABAAIAAAA8APr/AAABAAIAAAA9APr/AAABAAIAAAA+APr/AAABAAIAAAA/APr/AAABAAIAAABAAPr/AAACAAIAAABCAPz/AAAAAAAAAABGAPz/AAACAAAAAABCAP3/AAAAAAIAAABDAP3/AAABAAIAAABEAP3/AAABAAIAAABFAP3/AAABAAIAAABGAP3/AAACAAIAAABDAPz/AAABAAAAAABEAPz/AAABAAAAAABFAPz/AAABAAAAAABJAPn/AAAAAAAAAABKAPn/AAABAAAAAABLAPn/AAABAAAAAABMAPn/AAABAAAAAABNAPn/AAABAAAAAABOAPn/AAABAAAAAABPAPn/AAABAAAAAABQAPn/AAACAAAAAABJAPr/AAAAAAEAAABJAPv/AAAAAAEAAABJAPz/AAAAAAEAAABJAP3/AAAAAAIAAABKAP3/AAABAAIAAABLAP3/AAABAAIAAABMAP3/AAABAAIAAABNAP3/AAABAAIAAABOAP3/AAABAAIAAABPAP3/AAABAAIAAABQAP3/AAACAAIAAABQAPz/AAACAAEAAABQAPv/AAACAAEAAABQAPr/AAACAAEAAABKAPr/AAABAAEAAABKAPv/AAABAAEAAABLAPv/AAABAAEAAABLAPz/AAABAAEAAABKAPz/AAABAAEAAABLAPr/AAABAAEAAABMAPr/AAABAAEAAABMAPv/AAABAAEAAABNAPv/AAABAAEAAABNAPz/AAABAAEAAABMAPz/AAABAAEAAABOAPz/AAABAAEAAABPAPz/AAABAAEAAABPAPv/AAABAAEAAABPAPr/AAABAAEAAABOAPr/AAABAAEAAABNAPr/AAABAAEAAABOAPv/AAABAAEAAAD6//v/AAAAAAIAAAD7//v/AAABAAIAAAD8//v/AAACAAIAAAD6//r/AAAAAAEAAAD6//n/AAAAAAEAAAD6//j/AAAAAAEAAAD6//f/AAAAAAEAAAD6//b/AAAAAAEAAAD6//X/AAAAAAEAAAD6//T/AAAAAAEAAAD8//r/AAACAAEAAAD8//n/AAACAAEAAAD8//j/AAACAAEAAAD8//f/AAACAAEAAAD8//b/AAACAAEAAAD8//X/AAACAAEAAAD8//T/AAACAAEAAAD6//P/AAAAAAAAAAD8//P/AAACAAAAAAD7//P/AAABAAAAAAD7//T/AAABAAEAAAD7//X/AAABAAEAAAD7//b/AAABAAEAAAD7//f/AAABAAEAAAD7//j/AAABAAEAAAD7//n/AAABAAEAAAD7//r/AAABAAEAAAA=")
 tile_set = SubResource("TileSet_lslib")
 
 [node name="reset box" type="Area2D" parent="." unique_id=576258847]
@@ -398,9 +431,153 @@ region_rect = Rect2(0, 0, 15.247555, 15.975662)
 position = Vector2(2968.5, -92)
 shape = SubResource("RectangleShape2D_e8app")
 
-[connection signal="body_entered" from="trigger_zone" to="trigger_zone" method="_on_body_entered"]
+[node name="spike2" type="Area2D" parent="." unique_id=1691838035]
+position = Vector2(3714, -481)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike2" unique_id=299869378]
+position = Vector2(-0.17797852, 8.251526)
+shape = SubResource("RectangleShape2D_k73cj")
+
+[node name="spike" type="Sprite2D" parent="spike2" unique_id=704661970]
+position = Vector2(-1, 5)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_rjqkl")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike3" type="Area2D" parent="." unique_id=730240143]
+position = Vector2(3774, -480)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike3" unique_id=1775204675]
+position = Vector2(-0.17797852, 8.251526)
+shape = SubResource("RectangleShape2D_rjqkl")
+
+[node name="spike" type="Sprite2D" parent="spike3" unique_id=700599830]
+position = Vector2(-1, 5)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_fs4d3")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike4" type="Area2D" parent="." unique_id=1454408370]
+position = Vector2(4251.746, -279.69604)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike4" unique_id=188672635]
+position = Vector2(-0.17797852, 8.251526)
+shape = SubResource("RectangleShape2D_fs4d3")
+
+[node name="spike" type="Sprite2D" parent="spike4" unique_id=485143698]
+position = Vector2(-1.5600586, 7.064789)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_7vxoj")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike5" type="Area2D" parent="." unique_id=461358342]
+position = Vector2(4319.8467, -281.7887)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike5" unique_id=523263388]
+position = Vector2(-8.846924, 9.788696)
+shape = SubResource("RectangleShape2D_ei405")
+
+[node name="spike" type="Sprite2D" parent="spike5" unique_id=1800436708]
+position = Vector2(-12.84668, 7.7886963)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_e8dv2")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike6" type="Area2D" parent="." unique_id=1561303812]
+position = Vector2(4469.424, -290.33112)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike6" unique_id=571662643]
+position = Vector2(-38.424072, 19.331116)
+shape = SubResource("RectangleShape2D_fs4d3")
+
+[node name="spike" type="Sprite2D" parent="spike6" unique_id=62619931]
+position = Vector2(-42.42383, 14.331116)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_7vxoj")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike7" type="Area2D" parent="." unique_id=978256520]
+position = Vector2(4391.03, -278.32648)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike7" unique_id=2069704505]
+position = Vector2(-13.029541, 6.326477)
+shape = SubResource("RectangleShape2D_ei405")
+
+[node name="spike" type="Sprite2D" parent="spike7" unique_id=1741725032]
+position = Vector2(-19.029785, 0.32647705)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_e8dv2")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike8" type="Area2D" parent="." unique_id=1125146824]
+position = Vector2(4469.424, -290.33112)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike8" unique_id=142484359]
+position = Vector2(-38.424072, 19.331116)
+shape = SubResource("RectangleShape2D_fs4d3")
+
+[node name="spike" type="Sprite2D" parent="spike8" unique_id=1671483964]
+position = Vector2(-42.42383, 14.331116)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_7vxoj")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="spike9" type="Area2D" parent="." unique_id=310458328]
+position = Vector2(4505.9067, -273.43558)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("9_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike9" unique_id=1013992276]
+position = Vector2(-15.906494, 1.4355774)
+shape = SubResource("RectangleShape2D_ei405")
+
+[node name="spike" type="Sprite2D" parent="spike9" unique_id=928256746]
+position = Vector2(-18.906738, -4.5644226)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_e8dv2")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[connection signal="body_entered" from="door lock" to="door lock" method="_on_body_entered"]
 [connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
 [connection signal="body_entered" from="key2" to="key2" method="_on_body_entered"]
 [connection signal="body_entered" from="move to next level" to="move to next level" method="_on_body_entered"]
 [connection signal="body_entered" from="reset box" to="reset box" method="_on_body_entered"]
 [connection signal="body_entered" from="spike" to="spike" method="_on_body_entered"]
+[connection signal="body_entered" from="spike2" to="spike2" method="_on_body_entered"]
+[connection signal="body_entered" from="spike3" to="spike3" method="_on_body_entered"]
+[connection signal="body_entered" from="spike4" to="spike4" method="_on_body_entered"]
+[connection signal="body_entered" from="spike5" to="spike5" method="_on_body_entered"]
+[connection signal="body_entered" from="spike6" to="spike6" method="_on_body_entered"]
+[connection signal="body_entered" from="spike7" to="spike7" method="_on_body_entered"]
+[connection signal="body_entered" from="spike8" to="spike8" method="_on_body_entered"]
+[connection signal="body_entered" from="spike9" to="spike9" method="_on_body_entered"]
