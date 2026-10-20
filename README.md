@@ -5,7 +5,7 @@ engine&logoColor=white)](https://godotengine.org)
 Made by **dillon mabe**
 ---
 ## How to Play
-- **Play in Browser:**  to open in itch.io
+- **Play in Browser: https://dillonmabe556-alt.itch.io/the-journey-toward-shinto**  to open in itch.io
 ---
 ## Artistic Statement
 ### Targeted Experience
