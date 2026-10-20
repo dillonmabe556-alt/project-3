@@ -7,9 +7,12 @@
 [ext_resource type="Script" uid="uid://dm8ed36d423j4" path="res://key.gd" id="4_0hol4"]
 [ext_resource type="Texture2D" uid="uid://csmgglnflnad4" path="res://Forest Tileset/Tiles/Sliced/Tile_83.png" id="4_hqns4"]
 [ext_resource type="Script" uid="uid://dksdool47uplx" path="res://move_to_next_level.gd" id="5_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://l87it88s8f8h" path="res://Forest Tileset/Objects/Pixel Art Padlock Pack - Animated/Old Padlock/BLACK/Sprites/Old Padlock - BLACK - 0000.png" id="6_k73cj"]
 [ext_resource type="Texture2D" uid="uid://hubgrjg08jv4" path="res://Forest Tileset/Tiles/TilesNonSliced.png" id="6_kdubu"]
 [ext_resource type="Script" uid="uid://bcigsb6a23f7l" path="res://reset_box.gd" id="8_rj586"]
+[ext_resource type="Texture2D" uid="uid://bxc6wv5ppodts" path="res://Forest Tileset/Objects/32x32 free key pack/Iron keys 32x32..png" id="8_rjqkl"]
 [ext_resource type="Texture2D" uid="uid://dlcc7m5fnc5rr" path="res://16-bit-spike-Sheet.png" id="9_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://dio8b1qka5kqh" path="res://Forest Tileset/Objects/32x32 free key pack/Gold keys 32x32..png" id="9_fs4d3"]
 [ext_resource type="Script" uid="uid://dnc3bkfqpgw2y" path="res://spike.gd" id="9_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://q36gydo05i54" path="res://Forest Tileset/Clouds/Clouds 4/1.png" id="12_d2bti"]
 [ext_resource type="Texture2D" uid="uid://bobtsbnwtmsiv" path="res://Forest Tileset/Clouds/Clouds 4/2.png" id="13_ta5nu"]
@@ -373,25 +376,44 @@ script = ExtResource("3_epypp")
 position = Vector2(-136, 24)
 shape = SubResource("RectangleShape2D_gbkgv")
 
-[node name="key" type="Area2D" parent="." unique_id=2059517377]
+[node name="Sprite2D" type="Sprite2D" parent="door lock" unique_id=907637232]
+position = Vector2(-137.5, 24.5)
+scale = Vector2(1.7083331, 1.5312499)
+texture = ExtResource("6_k73cj")
+
+[node name="stone key" type="Area2D" parent="." unique_id=2059517377]
 position = Vector2(-34, -10)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("4_0hol4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="key" unique_id=1101553341]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stone key" unique_id=1101553341]
 position = Vector2(22, -230)
 shape = SubResource("CircleShape2D_lslib")
 
-[node name="key2" type="Area2D" parent="." unique_id=616961512]
+[node name="Sprite2D" type="Sprite2D" parent="stone key" unique_id=1651940812]
+position = Vector2(29.5, -228.5)
+scale = Vector2(0.8584906, 0.2891985)
+texture = ExtResource("8_rjqkl")
+region_enabled = true
+region_rect = Rect2(59.830933, 166.8266, 106.35077, 287.47168)
+
+[node name="golden key" type="Area2D" parent="." unique_id=616961512]
 position = Vector2(-28, 31)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("4_0hol4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="key2" unique_id=445437618]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="golden key" unique_id=445437618]
 position = Vector2(812, -71)
 shape = SubResource("CircleShape2D_lslib")
+
+[node name="Sprite2D" type="Sprite2D" parent="golden key" unique_id=704557261]
+position = Vector2(811.9105, -75)
+scale = Vector2(0.9592213, 0.22082019)
+texture = ExtResource("9_fs4d3")
+region_enabled = true
+region_rect = Rect2(45.834534, 143.9927, 127.04364, 317.60904)
 
 [node name="move to next level" type="Area2D" parent="." unique_id=967614322 node_paths=PackedStringArray("destination_node")]
 position = Vector2(-87, -102)
@@ -602,8 +624,8 @@ scale = Vector2(20.317709, 12.8549385)
 texture = ExtResource("15_k73cj")
 
 [connection signal="body_entered" from="door lock" to="door lock" method="_on_body_entered"]
-[connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
-[connection signal="body_entered" from="key2" to="key2" method="_on_body_entered"]
+[connection signal="body_entered" from="stone key" to="stone key" method="_on_body_entered"]
+[connection signal="body_entered" from="golden key" to="golden key" method="_on_body_entered"]
 [connection signal="body_entered" from="move to next level" to="move to next level" method="_on_body_entered"]
 [connection signal="body_entered" from="reset box" to="reset box" method="_on_body_entered"]
 [connection signal="body_entered" from="spike" to="spike" method="_on_body_entered"]

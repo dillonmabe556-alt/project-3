@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	print("player entered")
-	for item in ["key" , "key2"]:
+	for item in ["stone key" , "golden key"]:
 		if (item not in GameManager.inven):
 			return
 	
