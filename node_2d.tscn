@@ -11,6 +11,10 @@
 [ext_resource type="Script" uid="uid://bcigsb6a23f7l" path="res://reset_box.gd" id="8_rj586"]
 [ext_resource type="Texture2D" uid="uid://dlcc7m5fnc5rr" path="res://16-bit-spike-Sheet.png" id="9_4d7sh"]
 [ext_resource type="Script" uid="uid://dnc3bkfqpgw2y" path="res://spike.gd" id="9_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://q36gydo05i54" path="res://Forest Tileset/Clouds/Clouds 4/1.png" id="12_d2bti"]
+[ext_resource type="Texture2D" uid="uid://bobtsbnwtmsiv" path="res://Forest Tileset/Clouds/Clouds 4/2.png" id="13_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://bodddjlkj0k44" path="res://Forest Tileset/Clouds/Clouds 4/3.png" id="14_flf07"]
+[ext_resource type="Texture2D" uid="uid://m60plns65ujd" path="res://Forest Tileset/Clouds/Clouds 4/4.png" id="15_k73cj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lslib"]
 size = Vector2(65, 69)
@@ -572,6 +576,30 @@ scale = Vector2(4, 4)
 texture = SubResource("CompressedTexture2D_e8dv2")
 region_enabled = true
 region_rect = Rect2(0, 0, 14.303574, 15.583958)
+
+[node name="background layer (on -8)" type="Sprite2D" parent="." unique_id=1669637122]
+z_index = -6
+position = Vector2(1835.5, -1054.0001)
+scale = Vector2(20.411459, 13.191357)
+texture = ExtResource("12_d2bti")
+
+[node name="background layer (on -7)" type="Sprite2D" parent="." unique_id=2137098605]
+z_index = -7
+position = Vector2(1830.5004, -1069.5002)
+scale = Vector2(20.317709, 12.8549385)
+texture = ExtResource("13_ta5nu")
+
+[node name="background layer (on -6)" type="Sprite2D" parent="." unique_id=994567352]
+z_index = -6
+position = Vector2(1830.5004, -1069.5002)
+scale = Vector2(20.317709, 12.8549385)
+texture = ExtResource("14_flf07")
+
+[node name="background layer (on -5)" type="Sprite2D" parent="." unique_id=587606699]
+z_index = -5
+position = Vector2(1830.5004, -1069.5002)
+scale = Vector2(20.317709, 12.8549385)
+texture = ExtResource("15_k73cj")
 
 [connection signal="body_entered" from="door lock" to="door lock" method="_on_body_entered"]
 [connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
