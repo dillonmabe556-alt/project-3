@@ -366,6 +366,14 @@ position = Vector2(-285, -548.5)
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="skip pervention" unique_id=1214410119]
 shape = SubResource("RectangleShape2D_7vxoj")
 
+[node name="Label" type="Label" parent="." unique_id=278664479]
+z_index = 1
+offset_left = -45.0
+offset_top = -164.0
+offset_right = 163.0
+offset_bottom = -81.0
+text = "collect the key to open the door "
+
 [node name="door lock" type="Area2D" parent="." unique_id=1463467584]
 position = Vector2(14, 0)
 collision_layer = 4
