@@ -16,5 +16,8 @@ func _on_body_entered(body: Node2D) -> void:
 	for item in ["key" , "key2"]:
 		if (item not in GameManager.inven):
 			return
-	queue_free()
+	
 	$"../wall".queue_free()
+	
+	queue_free()
+	
