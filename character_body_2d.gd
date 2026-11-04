@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 const SPEED = 400.0
 const JUMP_VELOCITY = -700.0
 func teleport_to(target_pos: Vector2) -> void:
@@ -22,9 +22,18 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("left", "right")
-	if direction:
+	
+	if direction != 0:
 		velocity.x = direction * SPEED
+		
+		# 4. Flip the sprite based on direction
+		# If direction is -1 (left), flip_h becomes true. If 1 (right), it becomes false.
+		animated_sprite.flip_h = (direction < 0)
 	else:
+		# Smooth deceleration when no input is pressed
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	
+
 
 	move_and_slide()

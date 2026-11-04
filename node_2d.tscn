@@ -2,26 +2,247 @@
 
 [ext_resource type="Script" uid="uid://cpldguy3cuccq" path="res://character_body_2d.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://dt7j6vyq1gdwa" path="res://Forest Tileset/Tiles/JapanProps-02.1/JapanProps-02.png" id="1_d21ai"]
-[ext_resource type="Texture2D" uid="uid://xkqhvypjuhxw" path="res://icon.svg" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://c46cump6lh1fc" path="res://tigger_zone.gd" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://cgtf7xfj0msqw" path="res://Forest Tileset/Animated Objects/Fox Sprite Sheet.png" id="3_rjqkl"]
 [ext_resource type="Script" uid="uid://dm8ed36d423j4" path="res://key.gd" id="4_0hol4"]
 [ext_resource type="Texture2D" uid="uid://csmgglnflnad4" path="res://Forest Tileset/Tiles/Sliced/Tile_83.png" id="4_hqns4"]
+[ext_resource type="Script" uid="uid://dexd812jwfh6o" path="res://enemy.gd" id="4_kfelt"]
 [ext_resource type="Texture2D" uid="uid://dulqvyxxp0a2s" path="res://Forest Tileset/Objects/pngs/Cherry Blossom Tree.png" id="4_rjqkl"]
 [ext_resource type="Script" uid="uid://dksdool47uplx" path="res://move_to_next_level.gd" id="5_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://jr5okoyrhojp" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound8.PNG" id="5_ytlpd"]
+[ext_resource type="Texture2D" uid="uid://xfi4wrmysljo" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound9.PNG" id="6_2v765"]
 [ext_resource type="Texture2D" uid="uid://l87it88s8f8h" path="res://Forest Tileset/Objects/Pixel Art Padlock Pack - Animated/Old Padlock/BLACK/Sprites/Old Padlock - BLACK - 0000.png" id="6_k73cj"]
 [ext_resource type="Texture2D" uid="uid://hubgrjg08jv4" path="res://Forest Tileset/Tiles/TilesNonSliced.png" id="6_kdubu"]
+[ext_resource type="Texture2D" uid="uid://t5oj6cpmrpsa" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound10.PNG" id="7_b8fb0"]
+[ext_resource type="Texture2D" uid="uid://cbiblcejhl4jd" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound11.PNG" id="8_ma08v"]
 [ext_resource type="Script" uid="uid://bcigsb6a23f7l" path="res://reset_box.gd" id="8_rj586"]
 [ext_resource type="Texture2D" uid="uid://bxc6wv5ppodts" path="res://Forest Tileset/Objects/32x32 free key pack/Iron keys 32x32..png" id="8_rjqkl"]
 [ext_resource type="Texture2D" uid="uid://dlcc7m5fnc5rr" path="res://16-bit-spike-Sheet.png" id="9_4d7sh"]
 [ext_resource type="Texture2D" uid="uid://dio8b1qka5kqh" path="res://Forest Tileset/Objects/32x32 free key pack/Gold keys 32x32..png" id="9_fs4d3"]
 [ext_resource type="Script" uid="uid://dnc3bkfqpgw2y" path="res://spike.gd" id="9_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://b5qnsa2xejdnv" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound12.PNG" id="9_s32dh"]
+[ext_resource type="Texture2D" uid="uid://d2x1qxxb3qgxt" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound13.PNG" id="10_037st"]
+[ext_resource type="Texture2D" uid="uid://55rmh8mgxh6s" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound14.PNG" id="11_6orn5"]
 [ext_resource type="Texture2D" uid="uid://q36gydo05i54" path="res://Forest Tileset/Clouds/Clouds 4/1.png" id="12_d2bti"]
+[ext_resource type="Texture2D" uid="uid://cmebu2s1cp4je" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound16.PNG" id="12_whnp6"]
+[ext_resource type="Texture2D" uid="uid://dcpbi4tgeyn06" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound15.PNG" id="13_22e24"]
 [ext_resource type="Texture2D" uid="uid://bobtsbnwtmsiv" path="res://Forest Tileset/Clouds/Clouds 4/2.png" id="13_ta5nu"]
 [ext_resource type="Texture2D" uid="uid://bodddjlkj0k44" path="res://Forest Tileset/Clouds/Clouds 4/3.png" id="14_flf07"]
+[ext_resource type="Texture2D" uid="uid://050yp2v1mh4f" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound17.PNG" id="14_m7xe6"]
 [ext_resource type="Texture2D" uid="uid://m60plns65ujd" path="res://Forest Tileset/Clouds/Clouds 4/4.png" id="15_k73cj"]
+[ext_resource type="Texture2D" uid="uid://73c5hegrlr1w" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound18.PNG" id="15_wqmsq"]
+[ext_resource type="Texture2D" uid="uid://bkppkxlbivwat" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound20.PNG" id="16_fkgk1"]
+[ext_resource type="Texture2D" uid="uid://cilyoltgb0ycj" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound19.PNG" id="17_qgxp6"]
+[ext_resource type="Texture2D" uid="uid://bhf4rh7e2hhyd" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound22.PNG" id="18_akb8o"]
+[ext_resource type="Texture2D" uid="uid://wopxt7fpw7p4" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound23.PNG" id="19_t3mf0"]
+[ext_resource type="Texture2D" uid="uid://dee4lk7403l3s" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound25.PNG" id="20_kejda"]
+[ext_resource type="Texture2D" uid="uid://crxoergkrt6ax" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound24.PNG" id="21_uqk8q"]
+[ext_resource type="Texture2D" uid="uid://dsgy2d3kd2ft6" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound26.PNG" id="22_6uidu"]
+[ext_resource type="Texture2D" uid="uid://da06oeo8b4k3i" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound27.PNG" id="23_qu7as"]
+[ext_resource type="Texture2D" uid="uid://rdvtije3s73p" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound29.PNG" id="24_lyuya"]
+[ext_resource type="Texture2D" uid="uid://cqive6ts2lfnp" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound28.PNG" id="25_5fipt"]
+[ext_resource type="Texture2D" uid="uid://dxcs2vfo12cdm" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound30.PNG" id="26_j02gt"]
+[ext_resource type="Texture2D" uid="uid://c8m466ppb3bd5" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound31.PNG" id="27_thyvg"]
+[ext_resource type="Texture2D" uid="uid://dmbhxs35okmbi" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound33.PNG" id="28_nsnm2"]
+[ext_resource type="Texture2D" uid="uid://cmcdlqgys457w" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound32.PNG" id="29_f8kvm"]
+[ext_resource type="Texture2D" uid="uid://fvi360biywl5" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound34.PNG" id="30_3hhlv"]
+[ext_resource type="Texture2D" uid="uid://c45orbkhok0dr" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound36.PNG" id="31_d88dk"]
+[ext_resource type="Texture2D" uid="uid://c3qelbxf80qts" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound35.PNG" id="32_122lf"]
+[ext_resource type="Texture2D" uid="uid://cb06vb7wf6m4p" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound37.PNG" id="33_r3ryn"]
+[ext_resource type="Texture2D" uid="uid://bf7tudnmt6bti" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound38.PNG" id="34_7ct8v"]
+[ext_resource type="Texture2D" uid="uid://i8jcne1bx86c" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound39.PNG" id="35_sg3tl"]
+[ext_resource type="Texture2D" uid="uid://bk45sy02a4xiq" path="res://Forest Tileset/Animated Objects/16 Fire Monster Set/Hound/Hound40.PNG" id="36_0fsb4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs4d3"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(96, 16, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vxoj"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(128, 16, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ei405"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(0, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8dv2"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(32, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nhjh"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(64, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjha6"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(96, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gt76g"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(128, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fr6y"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(160, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hxjc"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(192, 80, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebxd8"]
+atlas = ExtResource("3_rjqkl")
+region = Rect2(224, 80, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lslib"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs4d3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vxoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ei405")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8dv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2nhjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjha6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gt76g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fr6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hxjc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebxd8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lslib"]
 size = Vector2(65, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w1pc0"]
+size = Vector2(49.37793, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_meti1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ytlpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2v765")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b8fb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ma08v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_s32dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_037st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6orn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_whnp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_22e24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m7xe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wqmsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fkgk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qgxp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_akb8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_t3mf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kejda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_uqk8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6uidu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qu7as")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_lyuya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_5fipt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_j02gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_thyvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_nsnm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_f8kvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_nsnm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3hhlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_d88dk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_122lf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_r3ryn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_7ct8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_sg3tl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_0fsb4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_meti1"]
 size = Vector2(752, 114)
@@ -259,16 +480,39 @@ region_filter_clip_enabled = true
 collision_layer = 2
 script = ExtResource("1_0e48y")
 
-[node name="Sprite2D" type="Sprite2D" parent="player" unique_id=395263801]
-position = Vector2(-29.5, 28.500002)
-scale = Vector2(0.5078125, 0.5234375)
-texture = ExtResource("1_wtcfe")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1063307757]
+position = Vector2(-29, 30)
+scale = Vector2(2, 4.3749995)
+sprite_frames = SubResource("SpriteFrames_lslib")
+autoplay = "default"
+frame_progress = 0.09827642
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=1372418906]
 position = Vector2(-28.5, 28.5)
 shape = SubResource("RectangleShape2D_lslib")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=428774386]
+
+[node name="enemy" type="CharacterBody2D" parent="." unique_id=1934103715]
+position = Vector2(9005.032, -271.8411)
+scale = Vector2(2, 4.3749995)
+collision_layer = 2
+script = ExtResource("4_kfelt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy" unique_id=179394619]
+position = Vector2(-7.3271484, 9.33511)
+shape = SubResource("RectangleShape2D_w1pc0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enemy" unique_id=1002977843]
+position = Vector2(-7.016159, 10.020822)
+scale = Vector2(0.7851548, 0.26607147)
+sprite_frames = SubResource("SpriteFrames_meti1")
+autoplay = "default"
+frame_progress = 0.06371416
+
+[node name="RayCast2D" type="RayCast2D" parent="enemy" unique_id=1529655420]
+position = Vector2(1.9838867, 0.19225311)
+target_position = Vector2(45, 45)
 
 [node name="floor" type="StaticBody2D" parent="." unique_id=332653835]
 collision_mask = 2
