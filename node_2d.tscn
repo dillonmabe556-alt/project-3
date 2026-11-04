@@ -244,6 +244,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gecl5"]
+size = Vector2(49.500244, 15.542863)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_meti1"]
 size = Vector2(752, 114)
 
@@ -485,7 +488,7 @@ position = Vector2(-29, 30)
 scale = Vector2(2, 4.3749995)
 sprite_frames = SubResource("SpriteFrames_lslib")
 autoplay = "default"
-frame_progress = 0.09827642
+frame_progress = 0.44927388
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=1372418906]
 position = Vector2(-28.5, 28.5)
@@ -508,11 +511,19 @@ position = Vector2(-7.016159, 10.020822)
 scale = Vector2(0.7851548, 0.26607147)
 sprite_frames = SubResource("SpriteFrames_meti1")
 autoplay = "default"
-frame_progress = 0.06371416
+frame_progress = 0.9071552
 
 [node name="RayCast2D" type="RayCast2D" parent="enemy" unique_id=1529655420]
 position = Vector2(1.9838867, 0.19225311)
 target_position = Vector2(45, 45)
+
+[node name="Area2D" type="Area2D" parent="enemy" unique_id=1887330916]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy/Area2D" unique_id=244847430]
+position = Vector2(-7.2661133, 9.33511)
+shape = SubResource("RectangleShape2D_gecl5")
 
 [node name="floor" type="StaticBody2D" parent="." unique_id=332653835]
 collision_mask = 2
@@ -1030,6 +1041,7 @@ position = Vector2(2025.0005, -1069.5002)
 scale = Vector2(20.993057, 12.8549385)
 texture = ExtResource("15_k73cj")
 
+[connection signal="body_entered" from="enemy/Area2D" to="enemy" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="door lock" to="door lock" method="_on_body_entered"]
 [connection signal="body_entered" from="stone key" to="stone key" method="_on_body_entered"]
 [connection signal="body_entered" from="golden key" to="golden key" method="_on_body_entered"]

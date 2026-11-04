@@ -31,3 +31,12 @@ func _physics_process(delta: float) -> void:
 	animated_sprite.flip_h = (direction < 0)
 
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	# Check if the body that touched the enemy is the Player
+	if body.name == "player":
+		print("Player died! Restarting level...")
+		
+		# Reload the current scene from scratch
+		get_tree().reload_current_scene()
