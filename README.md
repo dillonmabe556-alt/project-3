@@ -1,0 +1,14 @@
+there was a read me here but it was deleted and i am still in the prosses of recreating it. i informed Kevin about this.
+
+
+# Puzzle Design Reflection: A Journey to Japan
+
+The puzzle I spent the most effort on was the platforming sequence that represents my journey to Japan and the personal discoveries I made along the way. I wanted the obstacles in the game to represent more than just challenges for the player to overcome. I wanted them to represent the different stages of my journey, from leaving my comfort zone to thinking about my future.
+
+The first obstacle is a locked door that requires keys to open. This represents leaving my comfort zone and being willing to explore new horizons in Japan. The next obstacle is a wide jump, which represents the journey to Japan itself. After this, the player reaches a torii gate that leads to the next level. The gate represents entering Japan and beginning a new stage of the journey.
+
+The next section involves platforming up a mountain, with spikes along the way and at the top. This part represents a mountain journey I took in Japan that led me to consider my possible belief in Shinto. I wanted the climb to be difficult because this experience involved personal reflection and exploring ideas that I had not fully considered before. The spikes represent the challenges along the way and the difficulty of reaching the top.
+
+The final obstacle is a giant leap toward the goal, with spikes below it. This represents taking the final leap toward the future and accepting the uncertainty that comes with moving forward in life. Falling is possible, but the player must still take the risk to reach the goal.
+
+Overall, I designed the obstacles to connect the gameplay with the experiences and ideas that shaped my journey. Instead of making the player complete random platforming challenges, I wanted each obstacle to have a purpose. The process helped me think about how game mechanics can represent personal experiences and how a player's progress through a level can tell a story without relying entirely on dialogue.
