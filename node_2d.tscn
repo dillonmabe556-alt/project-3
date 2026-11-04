@@ -488,7 +488,7 @@ position = Vector2(-29, 30)
 scale = Vector2(2, 4.3749995)
 sprite_frames = SubResource("SpriteFrames_lslib")
 autoplay = "default"
-frame_progress = 0.44927388
+frame_progress = 0.69393414
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=1372418906]
 position = Vector2(-28.5, 28.5)
@@ -511,7 +511,7 @@ position = Vector2(-7.016159, 10.020822)
 scale = Vector2(0.7851548, 0.26607147)
 sprite_frames = SubResource("SpriteFrames_meti1")
 autoplay = "default"
-frame_progress = 0.9071552
+frame_progress = 0.43332925
 
 [node name="RayCast2D" type="RayCast2D" parent="enemy" unique_id=1529655420]
 position = Vector2(1.9838867, 0.19225311)
@@ -1040,6 +1040,22 @@ z_index = -5
 position = Vector2(2025.0005, -1069.5002)
 scale = Vector2(20.993057, 12.8549385)
 texture = ExtResource("15_k73cj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1664145530]
+z_index = -1
+offset_left = 8084.0
+offset_top = -3259.0
+offset_right = 11951.0
+offset_bottom = 1064.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label2" type="Label" parent="." unique_id=1680200226]
+offset_left = 10025.0
+offset_top = -221.0
+offset_right = 10269.0
+offset_bottom = -78.0
+text = "you have enter the cave of doubt and you have pass the guardian but who knows what awaits farther in or beyound the cave"
+autowrap_mode = 2
 
 [connection signal="body_entered" from="enemy/Area2D" to="enemy" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="door lock" to="door lock" method="_on_body_entered"]
