@@ -18,3 +18,46 @@ https://dillonmabe556-alt.itch.io/the-journey-toward-shinto
 
 project 3 version 
 https://dillonmabe556-alt.itch.io/project3 
+
+
+# Project 4: My Amazing P4
+![Godot Version](https://img.shields.io/badge/Godot-4.x-blue?logo=godot-
+engine&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-PC%20/%20Web-green)
+**Developed by:**
+- **[Your Name]** dillon mabe 
+- **[Your Name]** the masterful artists of the internet
+Short introduction of your game.
+---
+## How to Play
+- **Play in Browser:** https://dillonmabe556-alt.itch.io/the-journey-toward-shinto  
+---
+### Asset Credits & Attributions
+> *List the source of all external assets you downloaded or generated with AI,
+along with any edits or modifications made in accordance with license terms.*
+- **Visual Assets:**
+- **Super Retro Ranch** by **Gif** ([Link to
+Asset](https://farm-animal.itch.io/farm))
+- Used for: Background, fence, and crop animations
+- Modifications: Recolored tree sprites to match the warm palette
+- **UI Pack Pixel Adventure** by **Kenney** ([Link to
+Asset](https://kenney.nl/assets/ui-pack-pixel-adventure))
+- Used for: Buttons, panel textures, and fonts
+- **AI-Generated Assets:**
+- **Milking Cow Sprite:** Generated using **ChatGPT** (Prompt: "16-bit pixel art
+dairy cow standing side view, transparent background", Modified by removing
+background and resized to 32x32 in Piskel.)
+- **Audio Assets:**
+- **[Track Title]** by **[Artist Name]** ([Link to Sound
+Source](https://example.com)) — Licensed under CC BY 4.0
+---
+## Known Issues
+- with the padlock the first try at the game works fine but after you die your inventory does not reset allowing you to recollect the keys or just re open the door 
+---
+## Coursework Submission Links
+- **Presentation Slides:** https://docs.google.com/presentation/d/1yDSrxLSkAbShyd0d5Fhk1cwK4kl5USGK1M1BR3C_LnI/edit?usp=sharing
+
+- **Gameplay Video:** https://drive.google.com/file/d/17QBwb3jfyuSHiBgu2EBZB4Wmd8FlPPOO/view?usp=sharing
+- 
+- **Game Design Document (GDD):** https://docs.google.com/document/d/1kH8-CsHRR8NCXMsBOKIc1CKYUzyqTDiDnfGv_5FR6ds/edit?usp=sharing
+---
