@@ -12,4 +12,9 @@ The next section involves platforming up a mountain, with spikes along the way a
 The final obstacle is a giant leap toward the goal, with spikes below it. This represents taking the final leap toward the future and accepting the uncertainty that comes with moving forward in life. Falling is possible, but the player must still take the risk to reach the goal.
 
 Overall, I designed the obstacles to connect the gameplay with the experiences and ideas that shaped my journey. Instead of making the player complete random platforming challenges, I wanted each obstacle to have a purpose. The process helped me think about how game mechanics can represent personal experiences and how a player's progress through a level can tell a story without relying entirely on dialogue.
+
+project 4 version
 https://dillonmabe556-alt.itch.io/the-journey-toward-shinto  
+
+project 3 version 
+https://dillonmabe556-alt.itch.io/project3 
