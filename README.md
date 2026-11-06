@@ -58,6 +58,10 @@ Source](https://example.com)) — Licensed under CC BY 4.0
 - **Presentation Slides:** https://docs.google.com/presentation/d/1yDSrxLSkAbShyd0d5Fhk1cwK4kl5USGK1M1BR3C_LnI/edit?usp=sharing
 
 - **Gameplay Video:** https://drive.google.com/file/d/17QBwb3jfyuSHiBgu2EBZB4Wmd8FlPPOO/view?usp=sharing
-- 
+  
 - **Game Design Document (GDD):** https://docs.google.com/document/d/1kH8-CsHRR8NCXMsBOKIc1CKYUzyqTDiDnfGv_5FR6ds/edit?usp=sharing
 ---
+
+## reflection
+
+so during project 4 and before with project 3 i didn't really have a plan or really a direction so i kept pushing it of which didn't give me enough time to make the project up to snuff. i should have at least given my self enough time or made a plan to balance the project with other assignments and my time in Japan. however i am still proud of the game i made due to it's personal bases but this stems form my own bias. i don't really like these over croered game engine sysems which increases my likely Ness to push off the work. 
